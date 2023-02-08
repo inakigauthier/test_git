@@ -1,0 +1,12 @@
+<!-- app/views/restaurants/new.html.erb -->
+<%= form_with model: @menu do |f| %>
+  <%= f.label :name_menu %>
+  <%= f.text_field :name_menu %>
+  <%= f.label :ingredient %>
+  <%= f.text_field :ingredient %>
+   <%= f.label :not_ingredient %>
+  <%= f.text_field :not_ingredient %>
+  <%= f.label :rating %>
+  <%= f.number_field :rating %>
+  <%= f.submit %>
+<% end %>
